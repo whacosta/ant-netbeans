@@ -11,6 +11,6 @@ RUN wget http://apache.dattatec.com//ant/binaries/apache-ant-1.9.14-bin.zip -P /
 RUN unzip apache-ant-1.9.14-bin.zip -d /opt/
 
 RUN export ANT_HOME=/opt/apache-ant-1.9.14
-RUN export PATH=${PATH}:${ANT_HOME}/bin 
+RUN export PATH=${PATH}:${ANT_HOME}/bin
 
 EXPOSE 80 443
