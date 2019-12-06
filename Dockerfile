@@ -8,7 +8,7 @@ RUN wget https://download.netbeans.org/netbeans/8.2/final/zip/netbeans-8.2-20160
 RUN unzip /opt/netbeans-8.2-201609300101-javase.zip -d /opt/
 
 RUN wget http://apache.dattatec.com//ant/binaries/apache-ant-1.9.14-bin.zip -P /opt/
-RUN unzip apache-ant-1.9.14-bin.zip -d /opt/
+RUN unzip /opt/apache-ant-1.9.14-bin.zip -d /opt/
 
 RUN export ANT_HOME=/opt/apache-ant-1.9.14
 RUN export PATH=${PATH}:${ANT_HOME}/bin
