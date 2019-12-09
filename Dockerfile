@@ -4,6 +4,8 @@ RUN apk add openrc
 RUN apk add apache2
 RUN apk add zip
 RUN apk add openjdk8
+RUN apk add icedtea-web-mozilla
+RUN apk add icedtea-web
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ENV PATH=$JAVA_HOME/bin:${PATH}
