@@ -12,6 +12,9 @@ ENV PATH=$JAVA_HOME/bin:${PATH}
 
 COPY javaws.jar /usr/lib/jvm/java-1.8-openjdk/jre/lib/
 
+RUN mkdir /opt/builder
+COPY build.properties /opt/builder/
+
 RUN wget https://download.netbeans.org/netbeans/8.2/final/zip/netbeans-8.2-201609300101-javase.zip -P /opt/
 RUN unzip /opt/netbeans-8.2-201609300101-javase.zip -d /opt/
 

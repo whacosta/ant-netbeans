@@ -21,3 +21,6 @@ Import, You can skip:
 
 If you set build.properties in your nbproject\private\private.properties
 
+```
+user.properties.file=/opt/builder/build.properties
+```
