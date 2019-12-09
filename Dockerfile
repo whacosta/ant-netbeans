@@ -6,7 +6,7 @@ RUN apk add zip
 RUN apk add openjdk8
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-ENV PATH="$JAVA_HOME/bin:${PATH}" 
+ENV PATH=$JAVA_HOME/bin:${PATH}
 
 RUN wget https://download.netbeans.org/netbeans/8.2/final/zip/netbeans-8.2-201609300101-javase.zip -P /opt/
 RUN unzip /opt/netbeans-8.2-201609300101-javase.zip -d /opt/
