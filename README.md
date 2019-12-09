@@ -24,3 +24,6 @@ If you set build.properties in your nbproject\private\private.properties
 ```
 user.properties.file=/opt/builder/build.properties
 ```
+
+You can see an example of execution in:
+https://gitlab.com/wacosta/dbmigration

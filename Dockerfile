@@ -1,7 +1,5 @@
 FROM alpine
 
-RUN apk add openrc
-RUN apk add apache2
 RUN apk add zip
 RUN apk add openjdk8
 RUN apk add icedtea-web-mozilla
@@ -23,7 +21,3 @@ RUN unzip /opt/apache-ant-1.9.14-bin.zip -d /opt/
 
 ENV ANT_HOME=/opt/apache-ant-1.9.14
 ENV PATH=${PATH}:${ANT_HOME}/bin
-
-RUN rc-update add apache2
-
-EXPOSE 80 443
